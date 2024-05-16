@@ -1,10 +1,11 @@
 import React from 'react';
 import { AppBar, Toolbar, Typography, Button, Stack } from '@mui/material';
-import { Link, useLocation } from 'react-router-dom';
+import { Link, useLocation ,useNavigate} from 'react-router-dom';
 // import Logo from '../logo.svg';
 
 const Navbar = () => {
   const location = useLocation();
+  const navigate = useNavigate();
   return (
     <AppBar position="static" sx={{ backgroundColor: '#ffff' }}>
     <Toolbar>
@@ -19,7 +20,8 @@ const Navbar = () => {
             <Button color="inherit" component={Link} to="/about" sx={{ backgroundColor: location.pathname === '/about' ? 'secondary.main' : 'inherit' }}>About Us</Button>
             <Button color="inherit" component={Link} to="/events" sx={{ backgroundColor: location.pathname === '/events' ? 'secondary.main' : 'inherit' }}>Events</Button>
             <Button color="inherit" component={Link} to="/contact" sx={{ backgroundColor: location.pathname === '/contact' ? 'secondary.main' : 'inherit' }}>Contact Us</Button>
-        </Stack>
+            <Button onClick={() => navigate('/login')} variant='contained'>Login</Button>    
+             </Stack>
       </Stack>
     </Toolbar>
   </AppBar>

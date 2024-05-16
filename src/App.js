@@ -6,6 +6,11 @@ import AboutUs from './pages/AboutUs';
 import Events from './pages/Events';
 import ContactUs from './pages/ContactUs';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import LoginForm from './components/Login';
+
+
+
+
 
 function App() {
   return (
@@ -18,6 +23,7 @@ function App() {
           <Route path="/about" element={<AboutUs/>} />
           <Route path="/events" element={<Events/>} />
           <Route path="/contact" element={<ContactUs/>} />
+          <Route path="/login" element={<LoginForm/>} />
         </Routes>
       </div>
     </Router>

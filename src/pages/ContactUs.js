@@ -34,7 +34,7 @@ const ContactUs = () => {
 
   return (
     <div>
-      <img src="/Assets/contactt.jpg" alt="Contact Us" style={{ width: '100%', height: '300px' }} />
+      <img src="/Assets/contact-us-banner.jpg" alt="Contact Us" style={{ width: '100%', height: '300px' }} />
       <div style={{ marginTop: '50px', marginRight: '50px', marginLeft: '50px', display: 'flex', justifyContent: 'center' }}>
         <div style={{ width: '400px', marginRight: '50px' }}>
           <div style={{ margin: 'auto', padding: '20px' }}>
@@ -106,28 +106,27 @@ const ContactUs = () => {
           </div>
         </div>
         <div>
-          
-          <div style={{ padding: '100px', fontSize: '16px' }}>
+          <div style={{ padding: '20px', fontSize: '16px' }}>
             <h3 style={{ marginBottom: '10px', color: '#333' }}>REGISTERED OFFICE:</h3>
             <p>Musale Construction</p>
             <p>( CIN:                 )</p>
-            <p>Musale Construction 52-C</p>
-            <p>Bhagyashree Apartment</p>
+            <p>Musale Construction ,Bhagyashree Apartment,</p>
             <p>Trimurti Nagar,Nagpur-440022 </p>
             <p>India.</p>
             <p>Ph: +91 9881104515</p>
             <p>Ph: +91 9823102625</p>
-            <p>Email: Musaleconstruction@gmail.com</p>
+            <p>Email: musale.construction@rediffmail.com</p>
           </div>
+          <a href="https://maps.app.goo.gl/1FYnVCNBdRM7uDBa6" target="_blank">
+            <img src="/Assets/location.png" alt="Location" style={{ width: '600px', height: '300px', marginRight: '10px' }} />
+          </a>
         </div>
       </div>
       <div style={{ backgroundColor: 'black', height: '70px', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-  <div style={{ textAlign: 'center', fontSize: '14px', color: 'white' }}>
-    © Copyright 2024 | Musale Construction
-  </div>
-</div>
-
-
+        <div style={{ textAlign: 'center', fontSize: '14px', color: 'white' }}>
+          © Copyright 2024 | Musale Construction
+        </div>
+      </div>
     </div>
   );
 };
